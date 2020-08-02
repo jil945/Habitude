@@ -8,14 +8,13 @@
 import UIKit
 
 class Create2ViewController: UIViewController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -26,4 +25,5 @@ class Create2ViewController: UIViewController {
     }
     */
 
+   
 }

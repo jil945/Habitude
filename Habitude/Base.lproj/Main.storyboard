@@ -16,14 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82u-ww-9VL">
-                                <rect key="frame" x="168" y="64" width="78" height="23"/>
+                                <rect key="frame" x="168" y="108" width="78" height="23"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifU-vM-gNr">
-                                <rect key="frame" x="348" y="64" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="326" y="108" width="68" height="30"/>
+                                <state key="normal" title="Add Habit"/>
                                 <connections>
                                     <segue destination="M2k-Db-YbB" kind="show" id="7V0-Fe-8D6"/>
                                 </connections>
@@ -38,13 +38,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wDO-wg-yKh"/>
+                    <navigationItem key="navigationItem" id="wDO-wg-yKh">
+                        <barButtonItem key="backBarButtonItem" title=" " id="NNI-gD-End"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="99.776785714285708"/>
         </scene>
-        <!--Create1 View Controller-->
+        <!--Create a Habit-->
         <scene sceneID="0aM-J3-Vnp">
             <objects>
                 <viewController id="M2k-Db-YbB" customClass="Create1ViewController" customModule="Habitude" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,29 +72,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <navigationBar contentMode="scaleToFill" backIndicatorImage="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4bb-Pu-gVu">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Create a Habit" id="TcI-K1-1a8">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="AOJ-Kh-83f">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5C3-fE-bV3">
-                                                <rect key="frame" x="20" y="7" width="92" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
-                                            </button>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="2Hb-Dm-E09">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xUS-06-Tax">
-                                                <rect key="frame" x="302" y="7" width="92" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Cancel"/>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What habit will you start?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="943-Jb-JbC">
-                                <rect key="frame" x="80.666666666666686" y="238" width="252.66666666666663" height="26.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="What habit will you start?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="943-Jb-JbC">
+                                <rect key="frame" x="80.666666666666686" y="282" width="253" height="26.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -101,22 +82,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Ovn-a3-Wre" firstAttribute="leading" secondItem="uBU-hu-I7x" secondAttribute="leading" constant="30" id="5k3-23-uvy"/>
-                            <constraint firstItem="4bb-Pu-gVu" firstAttribute="trailing" secondItem="uBU-hu-I7x" secondAttribute="trailing" id="9hR-0h-z3V"/>
                             <constraint firstItem="943-Jb-JbC" firstAttribute="centerX" secondItem="ZZn-Zi-ykG" secondAttribute="centerX" id="MOH-PU-Iwc"/>
                             <constraint firstItem="M7q-ef-qUV" firstAttribute="top" secondItem="Ovn-a3-Wre" secondAttribute="bottom" constant="10" id="NWq-9X-GPN"/>
-                            <constraint firstItem="943-Jb-JbC" firstAttribute="top" secondItem="4bb-Pu-gVu" secondAttribute="bottom" constant="150" id="Nn8-ZP-Lrl"/>
-                            <constraint firstItem="4bb-Pu-gVu" firstAttribute="leading" secondItem="uBU-hu-I7x" secondAttribute="leading" id="RcG-o5-GRF"/>
                             <constraint firstItem="uBU-hu-I7x" firstAttribute="bottom" secondItem="hFG-rZ-oZg" secondAttribute="bottom" constant="30" id="UBM-Ry-T7h"/>
                             <constraint firstItem="M7q-ef-qUV" firstAttribute="leading" secondItem="uBU-hu-I7x" secondAttribute="leading" constant="30" id="WK9-eG-08O"/>
                             <constraint firstItem="uBU-hu-I7x" firstAttribute="trailing" secondItem="M7q-ef-qUV" secondAttribute="trailing" constant="30" id="XNg-UN-4yM"/>
                             <constraint firstItem="M7q-ef-qUV" firstAttribute="centerY" secondItem="ZZn-Zi-ykG" secondAttribute="centerY" id="YRA-MH-2bz"/>
                             <constraint firstItem="hFG-rZ-oZg" firstAttribute="leading" secondItem="uBU-hu-I7x" secondAttribute="leading" constant="191" id="agz-lK-qEV"/>
-                            <constraint firstItem="4bb-Pu-gVu" firstAttribute="top" secondItem="uBU-hu-I7x" secondAttribute="top" id="oEN-2X-7z1"/>
                             <constraint firstItem="uBU-hu-I7x" firstAttribute="trailing" secondItem="hFG-rZ-oZg" secondAttribute="trailing" constant="191" id="tLi-SK-5z5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uBU-hu-I7x"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6zg-eN-lfK"/>
+                    <navigationItem key="navigationItem" title="Create a Habit" id="6zg-eN-lfK">
+                        <barButtonItem key="backBarButtonItem" title=" " id="70v-rl-hHF"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="habitTextField" destination="M7q-ef-qUV" id="X9v-eA-2ou"/>
                     </connections>
@@ -125,7 +104,7 @@
             </objects>
             <point key="canvasLocation" x="1731.8840579710147" y="99.776785714285708"/>
         </scene>
-        <!--Create2 View Controller-->
+        <!--Create a Habit-->
         <scene sceneID="U0X-3e-UaF">
             <objects>
                 <viewController id="sKg-Z4-nlS" customClass="Create2ViewController" customModule="Habitude" customModuleProvider="target" sceneMemberID="viewController">
@@ -133,35 +112,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" backIndicatorImage="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oLj-kd-ptI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Create a Habit" id="3MT-zV-bKm">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="qy9-IF-IR2">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1lb-gF-aTy">
-                                                <rect key="frame" x="20" y="7" width="92" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
-                                            </button>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="SZL-SD-BZa">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w5S-PE-QWU">
-                                                <rect key="frame" x="302" y="7" width="92" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Cancel"/>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specify a habit goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwL-Zl-rbb">
-                                <rect key="frame" x="108.66666666666669" y="238" width="196.66666666666663" height="26.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Specify a habit goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwL-Zl-rbb">
+                                <rect key="frame" x="108.66666666666667" y="282" width="196.66666666666663" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habits are easier to do when they have specific goals." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86r-TR-qJj">
-                                <rect key="frame" x="82" y="294.33333333333331" width="250" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Habits are easier to do when they have specific goals." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86r-TR-qJj">
+                                <rect key="frame" x="82" y="338.33333333333331" width="250" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="036-Jb-t7e"/>
                                     <constraint firstAttribute="height" constant="42" id="gS2-J9-f1o"/>
@@ -170,8 +128,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E.g. study for 10 minutes, read 40 pages, run 2 miles." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="401-8k-jks">
-                                <rect key="frame" x="30" y="346.33333333333331" width="354" height="15.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="E.g. study for 10 minutes, read 40 pages, run 2 miles." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="401-8k-jks">
+                                <rect key="frame" x="30" y="390.33333333333326" width="354" height="15.666666666666686"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -184,7 +142,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="47d-Mh-rDl">
-                                <rect key="frame" x="144.66666666666666" y="431" width="124.99999999999997" height="34"/>
+                                <rect key="frame" x="137" y="431" width="140" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kBi-Ca-BRI">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
@@ -194,10 +152,15 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmQ-m3-qC8">
-                                        <rect key="frame" x="70" y="0.0" width="55" height="34"/>
-                                        <state key="normal" title="minutes"/>
-                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="minutes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oD6-Hj-Yz7">
+                                        <rect key="frame" x="70" y="0.0" width="70" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="knl-05-qyd"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -207,20 +170,18 @@
                             <constraint firstItem="usx-TW-tGD" firstAttribute="trailing" secondItem="401-8k-jks" secondAttribute="trailing" constant="30" id="8fc-8D-Cog"/>
                             <constraint firstItem="47d-Mh-rDl" firstAttribute="centerX" secondItem="T2A-bh-P9s" secondAttribute="centerX" id="COH-A1-z5p"/>
                             <constraint firstItem="usx-TW-tGD" firstAttribute="bottom" secondItem="yTO-gz-HMz" secondAttribute="bottom" constant="30" id="D8p-5Z-k3Y"/>
-                            <constraint firstItem="PwL-Zl-rbb" firstAttribute="top" secondItem="oLj-kd-ptI" secondAttribute="bottom" constant="150" id="Eq6-bj-9UB"/>
                             <constraint firstItem="401-8k-jks" firstAttribute="top" secondItem="86r-TR-qJj" secondAttribute="bottom" constant="10" id="MHk-vn-hJs"/>
                             <constraint firstItem="yTO-gz-HMz" firstAttribute="centerX" secondItem="T2A-bh-P9s" secondAttribute="centerX" id="PmM-mX-IM4"/>
                             <constraint firstItem="86r-TR-qJj" firstAttribute="centerX" secondItem="T2A-bh-P9s" secondAttribute="centerX" id="RL3-7Y-Ord"/>
                             <constraint firstItem="86r-TR-qJj" firstAttribute="top" secondItem="PwL-Zl-rbb" secondAttribute="bottom" constant="30" id="azF-mA-64f"/>
                             <constraint firstItem="PwL-Zl-rbb" firstAttribute="centerX" secondItem="T2A-bh-P9s" secondAttribute="centerX" id="fMj-df-i9q"/>
                             <constraint firstItem="401-8k-jks" firstAttribute="leading" secondItem="usx-TW-tGD" secondAttribute="leading" constant="30" id="mXC-yA-Ps3"/>
-                            <constraint firstItem="oLj-kd-ptI" firstAttribute="top" secondItem="usx-TW-tGD" secondAttribute="top" id="pMu-A0-cdT"/>
-                            <constraint firstItem="oLj-kd-ptI" firstAttribute="trailing" secondItem="usx-TW-tGD" secondAttribute="trailing" id="pWp-aQ-Z7g"/>
-                            <constraint firstItem="oLj-kd-ptI" firstAttribute="leading" secondItem="usx-TW-tGD" secondAttribute="leading" id="tPB-9V-gyk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="usx-TW-tGD"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OCd-KD-U3X"/>
+                    <navigationItem key="navigationItem" title="Create a Habit" id="OCd-KD-U3X">
+                        <barButtonItem key="backBarButtonItem" title=" " id="KgZ-ft-kFL"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gw3-Fp-JJN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,9 +190,10 @@
         <!--Navigation Controller-->
         <scene sceneID="5K2-ue-Oi2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="rRE-tt-izc" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rRE-tt-izc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ofh-Px-Vr9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -243,7 +205,7 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
         </scene>
-        <!--Create4 View Controller-->
+        <!--Create a Habit-->
         <scene sceneID="K8n-JD-12c">
             <objects>
                 <viewController id="buP-O1-Xah" customClass="Create4ViewController" customModule="Habitude" customModuleProvider="target" sceneMemberID="viewController">
@@ -251,35 +213,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" backIndicatorImage="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jDl-E7-Pi7">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Create a Habit" id="LXL-U0-iwe">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="LcS-V7-kbF">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13K-8p-w49">
-                                                <rect key="frame" x="20" y="7" width="92" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
-                                            </button>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="EqL-9W-sDW">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nNw-iY-oSv">
-                                                <rect key="frame" x="302" y="7" width="92" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Cancel"/>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often will you do this habit?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctk-OE-UK7">
-                                <rect key="frame" x="45.666666666666657" y="238" width="322.66666666666674" height="26.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="How often will you do this habit?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctk-OE-UK7">
+                                <rect key="frame" x="45.666666666666657" y="282" width="322.66666666666674" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The more frequent you practice, the faster your habit will develop." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwX-nQ-JYT">
-                                <rect key="frame" x="57" y="294.33333333333331" width="300" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The more frequent you practice, the faster your habit will develop." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwX-nQ-JYT">
+                                <rect key="frame" x="57" y="338.33333333333331" width="300" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="UEO-s0-mT7"/>
                                     <constraint firstAttribute="height" constant="42" id="d1i-w2-xil"/>
@@ -353,26 +294,22 @@
                             <constraint firstItem="fqR-Ps-S0r" firstAttribute="bottom" secondItem="3I2-5u-2nw" secondAttribute="bottom" constant="20" id="NBn-2h-pNj"/>
                             <constraint firstItem="oB1-2m-537" firstAttribute="centerX" secondItem="L3N-qB-kO3" secondAttribute="centerX" id="Vnu-bn-N3f"/>
                             <constraint firstItem="IwX-nQ-JYT" firstAttribute="top" secondItem="Ctk-OE-UK7" secondAttribute="bottom" constant="30" id="axj-kl-z9r"/>
-                            <constraint firstItem="jDl-E7-Pi7" firstAttribute="trailing" secondItem="fqR-Ps-S0r" secondAttribute="trailing" id="cGb-Dm-olq"/>
                             <constraint firstItem="2Na-Ug-JiY" firstAttribute="top" secondItem="oB1-2m-537" secondAttribute="bottom" constant="30" id="gDg-mq-6vq"/>
                             <constraint firstItem="Ctk-OE-UK7" firstAttribute="centerX" secondItem="L3N-qB-kO3" secondAttribute="centerX" id="hr0-bi-NJR"/>
                             <constraint firstItem="IwX-nQ-JYT" firstAttribute="centerX" secondItem="L3N-qB-kO3" secondAttribute="centerX" id="jOf-p3-eIM"/>
-                            <constraint firstItem="jDl-E7-Pi7" firstAttribute="leading" secondItem="fqR-Ps-S0r" secondAttribute="leading" id="jlG-e4-mtR"/>
                             <constraint firstItem="3I2-5u-2nw" firstAttribute="centerX" secondItem="L3N-qB-kO3" secondAttribute="centerX" id="ll1-y7-b6N"/>
-                            <constraint firstItem="jDl-E7-Pi7" firstAttribute="top" secondItem="fqR-Ps-S0r" secondAttribute="top" id="owa-gx-kDb"/>
                             <constraint firstItem="2Na-Ug-JiY" firstAttribute="centerX" secondItem="L3N-qB-kO3" secondAttribute="centerX" id="v5D-8V-VBd"/>
                             <constraint firstItem="oB1-2m-537" firstAttribute="centerY" secondItem="L3N-qB-kO3" secondAttribute="centerY" id="vnT-gU-b4D"/>
-                            <constraint firstItem="Ctk-OE-UK7" firstAttribute="top" secondItem="jDl-E7-Pi7" secondAttribute="bottom" constant="150" id="zKc-Yz-5du"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fqR-Ps-S0r"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Mae-wy-fj1"/>
+                    <navigationItem key="navigationItem" title="Create a Habit" id="Mae-wy-fj1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Iz-4f-hEl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3865" y="100"/>
         </scene>
-        <!--Create3 View Controller-->
+        <!--Create a Habit-->
         <scene sceneID="HsS-A1-dCb">
             <objects>
                 <viewController id="WiY-0u-3qE" customClass="Create3ViewController" customModule="Habitude" customModuleProvider="target" sceneMemberID="viewController">
@@ -380,35 +317,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" backIndicatorImage="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="N0m-07-1Dj">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Create a Habit" id="jyf-AP-MWn">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="Kxw-qM-yXK">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dUG-We-DiH">
-                                                <rect key="frame" x="20" y="7" width="92" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
-                                            </button>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="w2g-se-rDB">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Kg-OH-OOr">
-                                                <rect key="frame" x="302" y="7" width="92" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Cancel"/>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When will you do this habit?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RU-WW-Ek4">
-                                <rect key="frame" x="67.666666666666657" y="238" width="278.66666666666674" height="26.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="When will you do this habit?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RU-WW-Ek4">
+                                <rect key="frame" x="67.666666666666686" y="282" width="279" height="26.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good habits are scheduled with your daily routines." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jss-qa-Won">
-                                <rect key="frame" x="82" y="294.66666666666669" width="250" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Good habits are scheduled with your daily routines." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jss-qa-Won">
+                                <rect key="frame" x="82" y="338.66666666666669" width="250" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="GSh-ye-0Fq"/>
                                     <constraint firstAttribute="height" constant="42" id="kfZ-Ao-zX5"/>
@@ -417,8 +333,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E.g. After my morning coffee, after breakfast, before I start working." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad8-9J-RP9">
-                                <rect key="frame" x="60" y="346.66666666666669" width="294" height="31.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="E.g. After my morning coffee, after breakfast, before I start working." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad8-9J-RP9">
+                                <rect key="frame" x="60" y="390.66666666666674" width="294" height="31.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="294" id="04B-BS-0aj"/>
                                 </constraints>
@@ -445,15 +361,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="N0m-07-1Dj" firstAttribute="leading" secondItem="aE0-LJ-tBK" secondAttribute="leading" id="1EB-C0-VUs"/>
                             <constraint firstItem="Tsf-R3-SIH" firstAttribute="leading" secondItem="aE0-LJ-tBK" secondAttribute="leading" constant="30" id="5BZ-Cr-Drp"/>
-                            <constraint firstItem="N0m-07-1Dj" firstAttribute="trailing" secondItem="aE0-LJ-tBK" secondAttribute="trailing" id="7Bd-UQ-z1B"/>
-                            <constraint firstItem="8RU-WW-Ek4" firstAttribute="top" secondItem="N0m-07-1Dj" secondAttribute="bottom" constant="150" id="7t3-vE-8a2"/>
                             <constraint firstItem="Tsf-R3-SIH" firstAttribute="centerY" secondItem="sRr-hg-GXK" secondAttribute="centerY" id="C4s-lt-V3T"/>
                             <constraint firstItem="Ad8-9J-RP9" firstAttribute="centerX" secondItem="sRr-hg-GXK" secondAttribute="centerX" id="EID-ye-8ll"/>
                             <constraint firstItem="jss-qa-Won" firstAttribute="centerX" secondItem="sRr-hg-GXK" secondAttribute="centerX" id="XKu-wQ-S7g"/>
                             <constraint firstItem="Ad8-9J-RP9" firstAttribute="top" secondItem="jss-qa-Won" secondAttribute="bottom" constant="10" id="Xhy-Ts-pXk"/>
-                            <constraint firstItem="N0m-07-1Dj" firstAttribute="top" secondItem="aE0-LJ-tBK" secondAttribute="top" id="YGh-OH-Fk8"/>
                             <constraint firstItem="8RU-WW-Ek4" firstAttribute="centerX" secondItem="sRr-hg-GXK" secondAttribute="centerX" id="ZaI-xA-xLf"/>
                             <constraint firstItem="Tsf-R3-SIH" firstAttribute="top" secondItem="stx-ZD-ykJ" secondAttribute="bottom" constant="10" id="b0q-tv-p03"/>
                             <constraint firstItem="jss-qa-Won" firstAttribute="top" secondItem="8RU-WW-Ek4" secondAttribute="bottom" constant="30" id="eUv-E9-6Vw"/>
@@ -464,14 +376,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aE0-LJ-tBK"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uXs-yq-xln"/>
+                    <navigationItem key="navigationItem" title="Create a Habit" id="uXs-yq-xln">
+                        <barButtonItem key="backBarButtonItem" title=" " id="vk3-WZ-N0z"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQc-aL-5s4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3102.898550724638" y="99.776785714285708"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="pencil" catalog="system" width="128" height="113"/>
-    </resources>
 </document>

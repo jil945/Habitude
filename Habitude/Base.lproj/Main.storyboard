@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rRE-tt-izc">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,17 +12,17 @@
             <objects>
                 <viewController title="Landing Page" id="BYZ-38-t0r" customClass="ViewController" customModule="Habitude" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82u-ww-9VL">
-                                <rect key="frame" x="168" y="108" width="78" height="23"/>
+                                <rect key="frame" x="148.66666666666666" y="108" width="78" height="23"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifU-vM-gNr">
-                                <rect key="frame" x="326" y="108" width="68" height="30"/>
+                                <rect key="frame" x="287" y="108" width="68" height="30"/>
                                 <state key="normal" title="Add Habit"/>
                                 <connections>
                                     <segue destination="M2k-Db-YbB" kind="show" id="7V0-Fe-8D6"/>
@@ -51,29 +51,29 @@
             <objects>
                 <viewController id="M2k-Db-YbB" customClass="Create1ViewController" customModule="Habitude" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZZn-Zi-ykG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I will..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovn-a3-Wre">
-                                <rect key="frame" x="30" y="400" width="47" height="21"/>
+                                <rect key="frame" x="30" y="358" width="47" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFG-rZ-oZg">
-                                <rect key="frame" x="191" y="802" width="32" height="30"/>
+                                <rect key="frame" x="171.66666666666666" y="718" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="sKg-Z4-nlS" kind="show" id="QVd-43-LER"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Action or activity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M7q-ef-qUV">
-                                <rect key="frame" x="30" y="431" width="354" height="34"/>
+                                <rect key="frame" x="30" y="389" width="315" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="What habit will you start?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="943-Jb-JbC">
-                                <rect key="frame" x="80.666666666666686" y="282" width="253" height="26.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What habit will you start?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="943-Jb-JbC">
+                                <rect key="frame" x="61" y="282" width="253" height="26.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -88,8 +88,8 @@
                             <constraint firstItem="M7q-ef-qUV" firstAttribute="leading" secondItem="uBU-hu-I7x" secondAttribute="leading" constant="30" id="WK9-eG-08O"/>
                             <constraint firstItem="uBU-hu-I7x" firstAttribute="trailing" secondItem="M7q-ef-qUV" secondAttribute="trailing" constant="30" id="XNg-UN-4yM"/>
                             <constraint firstItem="M7q-ef-qUV" firstAttribute="centerY" secondItem="ZZn-Zi-ykG" secondAttribute="centerY" id="YRA-MH-2bz"/>
-                            <constraint firstItem="hFG-rZ-oZg" firstAttribute="leading" secondItem="uBU-hu-I7x" secondAttribute="leading" constant="191" id="agz-lK-qEV"/>
-                            <constraint firstItem="uBU-hu-I7x" firstAttribute="trailing" secondItem="hFG-rZ-oZg" secondAttribute="trailing" constant="191" id="tLi-SK-5z5"/>
+                            <constraint firstItem="hFG-rZ-oZg" firstAttribute="centerX" secondItem="ZZn-Zi-ykG" secondAttribute="centerX" id="h5m-zl-urg"/>
+                            <constraint firstItem="943-Jb-JbC" firstAttribute="top" secondItem="uBU-hu-I7x" secondAttribute="top" constant="194" id="u9t-pM-K9a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uBU-hu-I7x"/>
                     </view>
@@ -109,17 +109,17 @@
             <objects>
                 <viewController id="sKg-Z4-nlS" customClass="Create2ViewController" customModule="Habitude" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T2A-bh-P9s">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Specify a habit goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwL-Zl-rbb">
-                                <rect key="frame" x="108.66666666666667" y="282" width="196.66666666666663" height="26.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specify a habit goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwL-Zl-rbb">
+                                <rect key="frame" x="89.333333333333329" y="282" width="196.66666666666669" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Habits are easier to do when they have specific goals." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86r-TR-qJj">
-                                <rect key="frame" x="82" y="338.33333333333331" width="250" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habits are easier to do when they have specific goals." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86r-TR-qJj">
+                                <rect key="frame" x="62.666666666666657" y="338.33333333333331" width="249.99999999999997" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="036-Jb-t7e"/>
                                     <constraint firstAttribute="height" constant="42" id="gS2-J9-f1o"/>
@@ -128,21 +128,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="E.g. study for 10 minutes, read 40 pages, run 2 miles." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="401-8k-jks">
-                                <rect key="frame" x="30" y="390.33333333333326" width="354" height="15.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E.g. study for 10 minutes, read 40 pages, run 2 miles." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="401-8k-jks">
+                                <rect key="frame" x="30" y="390.33333333333331" width="315" height="31.333333333333314"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTO-gz-HMz">
-                                <rect key="frame" x="191" y="802" width="32" height="30"/>
+                                <rect key="frame" x="171.66666666666666" y="718" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="WiY-0u-3qE" kind="show" id="ygs-rQ-K78"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="47d-Mh-rDl">
-                                <rect key="frame" x="137" y="431" width="140" height="34"/>
+                                <rect key="frame" x="126.66666666666669" y="441.66666666666669" width="122" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kBi-Ca-BRI">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
@@ -152,11 +152,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="minutes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oD6-Hj-Yz7">
-                                        <rect key="frame" x="70" y="0.0" width="70" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="70" id="knl-05-qyd"/>
-                                        </constraints>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="minutes" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ELZ-Rl-zQ7">
+                                        <rect key="frame" x="69.999999999999986" y="0.0" width="52" height="34"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -166,15 +164,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="47d-Mh-rDl" firstAttribute="centerY" secondItem="T2A-bh-P9s" secondAttribute="centerY" id="5te-Op-Buc"/>
                             <constraint firstItem="usx-TW-tGD" firstAttribute="trailing" secondItem="401-8k-jks" secondAttribute="trailing" constant="30" id="8fc-8D-Cog"/>
                             <constraint firstItem="47d-Mh-rDl" firstAttribute="centerX" secondItem="T2A-bh-P9s" secondAttribute="centerX" id="COH-A1-z5p"/>
                             <constraint firstItem="usx-TW-tGD" firstAttribute="bottom" secondItem="yTO-gz-HMz" secondAttribute="bottom" constant="30" id="D8p-5Z-k3Y"/>
                             <constraint firstItem="401-8k-jks" firstAttribute="top" secondItem="86r-TR-qJj" secondAttribute="bottom" constant="10" id="MHk-vn-hJs"/>
                             <constraint firstItem="yTO-gz-HMz" firstAttribute="centerX" secondItem="T2A-bh-P9s" secondAttribute="centerX" id="PmM-mX-IM4"/>
                             <constraint firstItem="86r-TR-qJj" firstAttribute="centerX" secondItem="T2A-bh-P9s" secondAttribute="centerX" id="RL3-7Y-Ord"/>
+                            <constraint firstItem="47d-Mh-rDl" firstAttribute="top" secondItem="401-8k-jks" secondAttribute="bottom" constant="20" id="Yb0-aX-xIn"/>
                             <constraint firstItem="86r-TR-qJj" firstAttribute="top" secondItem="PwL-Zl-rbb" secondAttribute="bottom" constant="30" id="azF-mA-64f"/>
                             <constraint firstItem="PwL-Zl-rbb" firstAttribute="centerX" secondItem="T2A-bh-P9s" secondAttribute="centerX" id="fMj-df-i9q"/>
+                            <constraint firstItem="PwL-Zl-rbb" firstAttribute="top" secondItem="usx-TW-tGD" secondAttribute="top" constant="194" id="h9r-s6-37A"/>
                             <constraint firstItem="401-8k-jks" firstAttribute="leading" secondItem="usx-TW-tGD" secondAttribute="leading" constant="30" id="mXC-yA-Ps3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="usx-TW-tGD"/>
@@ -182,6 +181,9 @@
                     <navigationItem key="navigationItem" title="Create a Habit" id="OCd-KD-U3X">
                         <barButtonItem key="backBarButtonItem" title=" " id="KgZ-ft-kFL"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="unitTextField" destination="ELZ-Rl-zQ7" id="9s4-8L-f4a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gw3-Fp-JJN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -193,7 +195,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rRE-tt-izc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ofh-Px-Vr9">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -210,17 +212,17 @@
             <objects>
                 <viewController id="buP-O1-Xah" customClass="Create4ViewController" customModule="Habitude" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L3N-qB-kO3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="How often will you do this habit?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctk-OE-UK7">
-                                <rect key="frame" x="45.666666666666657" y="282" width="322.66666666666674" height="26.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often will you do this habit?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctk-OE-UK7">
+                                <rect key="frame" x="26.333333333333343" y="282" width="322.66666666666663" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The more frequent you practice, the faster your habit will develop." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwX-nQ-JYT">
-                                <rect key="frame" x="57" y="338.33333333333331" width="300" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The more frequent you practice, the faster your habit will develop." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwX-nQ-JYT">
+                                <rect key="frame" x="37.666666666666657" y="338.33333333333331" width="300" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="UEO-s0-mT7"/>
                                     <constraint firstAttribute="height" constant="42" id="d1i-w2-xil"/>
@@ -230,11 +232,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I2-5u-2nw">
-                                <rect key="frame" x="171" y="812" width="72" height="30"/>
+                                <rect key="frame" x="151.66666666666666" y="728" width="72" height="30"/>
                                 <state key="normal" title="Save habit"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oB1-2m-537">
-                                <rect key="frame" x="72" y="393" width="270" height="110"/>
+                                <rect key="frame" x="52.666666666666657" y="390.33333333333331" width="270" height="110"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="929-aL-YTH">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="30"/>
@@ -244,7 +246,7 @@
                                                 <state key="normal" title="Su"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNF-It-iRN">
-                                                <rect key="frame" x="40" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="40.000000000000007" y="0.0" width="29.999999999999993" height="30"/>
                                                 <state key="normal" title="Mo"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgz-S9-bDn">
@@ -264,7 +266,7 @@
                                                 <state key="normal" title="Fr"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ee5-Ab-bvm">
-                                                <rect key="frame" x="240" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="240.00000000000003" y="0.0" width="29.999999999999972" height="30"/>
                                                 <state key="normal" title="Sa"/>
                                             </button>
                                         </subviews>
@@ -280,7 +282,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any Day habits will not be penalized for skipping" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Na-Ug-JiY">
-                                <rect key="frame" x="60" y="533" width="294" height="15.666666666666629"/>
+                                <rect key="frame" x="40.666666666666657" y="530.33333333333337" width="294" height="15.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="294" id="wUF-uF-RFa"/>
                                 </constraints>
@@ -291,15 +293,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="oB1-2m-537" firstAttribute="top" secondItem="IwX-nQ-JYT" secondAttribute="bottom" constant="10" id="Hwi-D6-uSJ"/>
                             <constraint firstItem="fqR-Ps-S0r" firstAttribute="bottom" secondItem="3I2-5u-2nw" secondAttribute="bottom" constant="20" id="NBn-2h-pNj"/>
                             <constraint firstItem="oB1-2m-537" firstAttribute="centerX" secondItem="L3N-qB-kO3" secondAttribute="centerX" id="Vnu-bn-N3f"/>
                             <constraint firstItem="IwX-nQ-JYT" firstAttribute="top" secondItem="Ctk-OE-UK7" secondAttribute="bottom" constant="30" id="axj-kl-z9r"/>
+                            <constraint firstItem="Ctk-OE-UK7" firstAttribute="top" secondItem="fqR-Ps-S0r" secondAttribute="top" constant="194" id="dVL-Kd-9dk"/>
                             <constraint firstItem="2Na-Ug-JiY" firstAttribute="top" secondItem="oB1-2m-537" secondAttribute="bottom" constant="30" id="gDg-mq-6vq"/>
                             <constraint firstItem="Ctk-OE-UK7" firstAttribute="centerX" secondItem="L3N-qB-kO3" secondAttribute="centerX" id="hr0-bi-NJR"/>
                             <constraint firstItem="IwX-nQ-JYT" firstAttribute="centerX" secondItem="L3N-qB-kO3" secondAttribute="centerX" id="jOf-p3-eIM"/>
                             <constraint firstItem="3I2-5u-2nw" firstAttribute="centerX" secondItem="L3N-qB-kO3" secondAttribute="centerX" id="ll1-y7-b6N"/>
                             <constraint firstItem="2Na-Ug-JiY" firstAttribute="centerX" secondItem="L3N-qB-kO3" secondAttribute="centerX" id="v5D-8V-VBd"/>
-                            <constraint firstItem="oB1-2m-537" firstAttribute="centerY" secondItem="L3N-qB-kO3" secondAttribute="centerY" id="vnT-gU-b4D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fqR-Ps-S0r"/>
                     </view>
@@ -314,17 +317,17 @@
             <objects>
                 <viewController id="WiY-0u-3qE" customClass="Create3ViewController" customModule="Habitude" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sRr-hg-GXK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="When will you do this habit?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RU-WW-Ek4">
-                                <rect key="frame" x="67.666666666666686" y="282" width="279" height="26.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When will you do this habit?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RU-WW-Ek4">
+                                <rect key="frame" x="48" y="282" width="279" height="26.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Good habits are scheduled with your daily routines." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jss-qa-Won">
-                                <rect key="frame" x="82" y="338.66666666666669" width="250" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good habits are scheduled with your daily routines." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jss-qa-Won">
+                                <rect key="frame" x="62.666666666666657" y="338.66666666666669" width="249.99999999999997" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="GSh-ye-0Fq"/>
                                     <constraint firstAttribute="height" constant="42" id="kfZ-Ao-zX5"/>
@@ -333,8 +336,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="E.g. After my morning coffee, after breakfast, before I start working." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad8-9J-RP9">
-                                <rect key="frame" x="60" y="390.66666666666674" width="294" height="31.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E.g. After my morning coffee, after breakfast, before I start working." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad8-9J-RP9">
+                                <rect key="frame" x="40.666666666666657" y="390.66666666666669" width="294" height="31.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="294" id="04B-BS-0aj"/>
                                 </constraints>
@@ -343,35 +346,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhp-N2-79p">
-                                <rect key="frame" x="191" y="802" width="32" height="30"/>
+                                <rect key="frame" x="171.66666666666666" y="718" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="buP-O1-Xah" kind="show" id="lGD-qn-NSD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stx-ZD-ykJ">
-                                <rect key="frame" x="30" y="391" width="46" height="30"/>
-                                <state key="normal" title="After..."/>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time or event in daily life" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tsf-R3-SIH">
-                                <rect key="frame" x="30" y="431" width="354" height="34"/>
+                                <rect key="frame" x="30" y="463" width="315" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="After..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8up-QA-OtP">
+                                <rect key="frame" x="30" y="432" width="48" height="21"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Tsf-R3-SIH" firstAttribute="leading" secondItem="aE0-LJ-tBK" secondAttribute="leading" constant="30" id="5BZ-Cr-Drp"/>
-                            <constraint firstItem="Tsf-R3-SIH" firstAttribute="centerY" secondItem="sRr-hg-GXK" secondAttribute="centerY" id="C4s-lt-V3T"/>
                             <constraint firstItem="Ad8-9J-RP9" firstAttribute="centerX" secondItem="sRr-hg-GXK" secondAttribute="centerX" id="EID-ye-8ll"/>
+                            <constraint firstItem="Ad8-9J-RP9" firstAttribute="top" secondItem="jss-qa-Won" secondAttribute="bottom" constant="10" id="HpF-lh-mBo"/>
+                            <constraint firstItem="Tsf-R3-SIH" firstAttribute="top" secondItem="8up-QA-OtP" secondAttribute="bottom" constant="10" id="Jqq-qo-qso"/>
+                            <constraint firstItem="8RU-WW-Ek4" firstAttribute="top" secondItem="aE0-LJ-tBK" secondAttribute="top" constant="194" id="VhC-CT-7ti"/>
                             <constraint firstItem="jss-qa-Won" firstAttribute="centerX" secondItem="sRr-hg-GXK" secondAttribute="centerX" id="XKu-wQ-S7g"/>
-                            <constraint firstItem="Ad8-9J-RP9" firstAttribute="top" secondItem="jss-qa-Won" secondAttribute="bottom" constant="10" id="Xhy-Ts-pXk"/>
                             <constraint firstItem="8RU-WW-Ek4" firstAttribute="centerX" secondItem="sRr-hg-GXK" secondAttribute="centerX" id="ZaI-xA-xLf"/>
-                            <constraint firstItem="Tsf-R3-SIH" firstAttribute="top" secondItem="stx-ZD-ykJ" secondAttribute="bottom" constant="10" id="b0q-tv-p03"/>
-                            <constraint firstItem="jss-qa-Won" firstAttribute="top" secondItem="8RU-WW-Ek4" secondAttribute="bottom" constant="30" id="eUv-E9-6Vw"/>
+                            <constraint firstItem="jss-qa-Won" firstAttribute="top" secondItem="8RU-WW-Ek4" secondAttribute="bottom" constant="30" id="cLh-3z-kb2"/>
+                            <constraint firstItem="8up-QA-OtP" firstAttribute="top" secondItem="Ad8-9J-RP9" secondAttribute="bottom" constant="10" id="eEh-wF-Bxz"/>
+                            <constraint firstItem="8up-QA-OtP" firstAttribute="leading" secondItem="aE0-LJ-tBK" secondAttribute="leading" constant="30" id="eQk-Hp-D66"/>
                             <constraint firstItem="aE0-LJ-tBK" firstAttribute="bottom" secondItem="zhp-N2-79p" secondAttribute="bottom" constant="30" id="hnD-BB-JOU"/>
                             <constraint firstItem="aE0-LJ-tBK" firstAttribute="trailing" secondItem="Tsf-R3-SIH" secondAttribute="trailing" constant="30" id="k7d-nu-b0P"/>
-                            <constraint firstItem="stx-ZD-ykJ" firstAttribute="leading" secondItem="aE0-LJ-tBK" secondAttribute="leading" constant="30" id="kEO-eL-YvD"/>
                             <constraint firstItem="zhp-N2-79p" firstAttribute="centerX" secondItem="sRr-hg-GXK" secondAttribute="centerX" id="ndd-9g-dvp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aE0-LJ-tBK"/>
@@ -379,6 +386,9 @@
                     <navigationItem key="navigationItem" title="Create a Habit" id="uXs-yq-xln">
                         <barButtonItem key="backBarButtonItem" title=" " id="vk3-WZ-N0z"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="prepositionTextField" destination="8up-QA-OtP" id="pNZ-yS-a7U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQc-aL-5s4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

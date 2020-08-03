@@ -7,14 +7,60 @@
 
 import UIKit
 
-class Create2ViewController: UIViewController {
+class Create2ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate  {
     
+    @IBOutlet weak var unitTextField: UITextField!
+    
+    var unitList = ["seconds", "minutes", "hours", "miles", "pages", "custom..."]
+    var selectedUnit: String?
+    
+    @objc func action(){
+        view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        createPickerView()
+        dismissPickerView()
     }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return unitList.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return unitList[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedUnit = unitList[row]
+        unitTextField.text = selectedUnit
+    }
+    
+    func createPickerView() {
+        let pickerView = UIPickerView()
+        pickerView.delegate = self
+        unitTextField.inputView = pickerView
+    }
+    
+    func dismissPickerView() {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        
+        let button = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.action))
+        toolBar.setItems([button], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        unitTextField.inputAccessoryView = toolBar
+    }
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
@@ -24,6 +70,4 @@ class Create2ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-   
 }

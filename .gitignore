@@ -93,4 +93,4 @@ iOSInjectionProject/
 .DS_Store
 
 #Firebase
-Habitude/GoogleService-Info.plist
+GoogleService-Info.plist
